@@ -1,22 +1,11 @@
-const ctx = document.getElementById('myChart');
+localStorage.setItem("name","Saman");
 
-  new Chart(ctx, {
-    type: 'bar',
-    data: {
-      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-      datasets: [{
-        label: '# of Votes',
-        data: [12, 19, 3, 5, 2, 3],
-        borderWidth: 1
-      }]
-    },
-    options: {
-      scales: {
-        y: {
-          beginAtZero: true
-        }
-      }
-    }
-  });
+console.log(localStorage.getItem("name"));
 
+localStorage.setItem("customer",`{
+    "name":"Shantha",
+    "age":20,
+    "address":"Panadura"
+    }`);
 
+console.log(localStorage.getItem("customer"));
